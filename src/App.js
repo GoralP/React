@@ -1,14 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Router } from "@reach/router";
+import Home from "./views/Home";
 import './application.css';
-import  Header from "./components/Header";
-import  Sidebar from "./components/Sidebar";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
+
 
 const App = () => {
-  return <div><Header></Header>
-  <Sidebar></Sidebar>
-  </div>
+  return (
+    <Provider store={store}>
+      <Router>
+        <Home path="/" />
+        {/* <About path="/:Id" /> */}
+      </Router>
+    </Provider>
+  );
 };
 
 export default App;

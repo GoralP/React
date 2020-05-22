@@ -10,3 +10,24 @@
     width:2rem;
     padding: 0;
 }
+.news-title
+{
+    height:36rem;
+    overflow-y: scroll;
+}
+.news-description{
+    height:36rem;
+    overflow-y: scroll;
+}
+.iframe {
+    margin-top: 10px;
+    width: 10rem;
+    height: 35rem;
+}
+.usa-country{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.usa-country:hover{
+    color:blue;
+}
