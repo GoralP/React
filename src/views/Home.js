@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { fetchNews } from "../redux/actions";
 import "bootstrap/dist/css/bootstrap.css";
 import { Header, Sidebar } from "../components";
-import usa from '../components/images/usa.jpg';
+import {usa,india} from '../components/images/india.png';
+
 
 const Home = () => {
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
     const { loading, news } = useSelector(state => ({
       loading: state.newsReducer.loading,
       news: state.newsReducer.news
@@ -27,7 +28,7 @@ const Home = () => {
   //         {news !== null &&
   //           news.map(title => (
   //           // <p>{title.title}</p>
-  //           <a href={title.url} target="desc">
+  //           <a href={title.url}>
   //               <p>{title.title}</p>
   //           </a>
   //           ))}
@@ -36,35 +37,54 @@ const Home = () => {
   //   </div>
   // );
 
-  return (
-    <div>
-      <Header></Header>
-      
-      
-        <div className="row ">
-          <div className="col-md-2 border">
-            <div className="row">
-            <div className="col-md-2 "><img className="icon" src={usa} alt="panda"></img></div>
-            <div className="col-md-8 usa-country" onClick={() => dispatch(fetchNews())}>USA</div>
-            </div>
-          </div> 
 
-          {loading ? (
-            <div className="col-md-3 border news-title">Loading...</div>
-           ) : (
-          <div className="col-md-3 border news-title">
-              {news !== null &&
-              news.map(title => (
-                <>
-                <p>{title.title}</p>
-                </>
-              ))}
+return (
+      <div>
+        <Header></Header>
+       
+          <div className="row ">
+            <div className="col-md-2 border country-name">
+              
+              <Sidebar></Sidebar>
+            </div> 
+  
+            {loading ? (
+              <div className="col-md-4 border news-title">Loading...</div>
+             ) : (
+              <>
+                {news !== null && (
+                  <>
+                  <div className="col-md-4 border news-title">
+                    <ul>
+                      {news !== null &&
+                      news.map(title => (
+                        <>
+                          <li className="li-index">
+                            <div className="news-title-display">
+                              <div>{title.title}</div>
+                              <div className="mb-3" ><a href={title.url} target="display">Read more</a></div>
+                            </div>
+                        </li>
+                      </>
+                    ))}
+                  </ul>
+                </div>
+
+                <iframe  src="" name="display" className="iframe-news-description"></iframe>
+               
+              
+              </>
+              )}
+              </>
+              )}
           </div>
-          )}
-          <div className="col-md-7 border news-description"></div>
-          </div>
-    </div>
-  );
+      // </div>
+    );
+
+
+
+
+
 
 };
 
