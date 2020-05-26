@@ -39,38 +39,45 @@ const Home = () => {
 
 
 return (
-      <div>
+      <div className="panda-background">
         <Header></Header>
+        <section className="mt-3">
+        <div class ="tnHead">
+          <h2>Country News</h2>
+        </div>  
+        </section>
        
-          <div className="row ">
-            <div className="col-md-2 border country-name">
+          <div className="row ml-2">
+            <div className="col-md-2  country-name">
               
               <Sidebar></Sidebar>
             </div> 
   
             {loading ? (
-              <div className="col-md-4 border news-title">Loading...</div>
+              <div className="col-md-4  ml-3  news-title">Loading...</div>
              ) : (
               <>
                 {news !== null && (
                   <>
-                  <div className="col-md-4 border news-title">
-                    <ul>
+                  <div className="col-md-4 border shadow ml-3  news-title">
+                    <ul className="ul-list">
                       {news !== null &&
                       news.map(title => (
                         <>
-                          <li className="li-index">
+                        <div className="">
+                          <li className="li-index shadow-2xl px-3 pt-2">
                             <div className="news-title-display">
                               <div>{title.title}</div>
-                              <div className="mb-3" ><a href={title.url} target="display">Read more</a></div>
+                              <div className="mb-3 py-2" ><a href={title.url} target="display" className="read-more">Read more</a></div>
                             </div>
                         </li>
+                        </div>
                       </>
                     ))}
                   </ul>
                 </div>
 
-                <iframe  src="" name="display" className="iframe-news-description"></iframe>
+                <iframe  src="" name="display" className="iframe-news-description "></iframe>
                
               
               </>
@@ -78,7 +85,7 @@ return (
               </>
               )}
           </div>
-      // </div>
+       </div>
     );
 
 

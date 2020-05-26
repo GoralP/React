@@ -1,50 +1,117 @@
 .panda-image{
     height:4rem;
     width:4rem;
+    margin-top :0.5rem;
+    margin-left:0.5rem;
 }
 .navigation-bar{
     border-bottom:1px solid gray;
+    background-color: rgb(8, 8, 8);
+    /* position: fixed; */
 }
 .icon{
     height:1.8rem;
     width:2.5rem;
-    padding: 0;
+    margin-top:0.3rem;
+    /* margin-left :0.5rem;  */
 }
 .news-title
 {
-    height:36rem;
-    overflow-y: scroll;
+    /* height:36rem; */
+    /*  overflow-y: scroll; */
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.75);
 }
 .news-description{
-    height:36rem;
+    height:33rem;
     overflow-y: scroll;
 }
 .iframe-news-description{
-    width: 41.5rem;
-    height: 36rem;
+    width: 40rem;
+    /* height: 36rem; */
     overflow-y: scroll;
+    border-radius: 0.5rem;
 }
 .usa-country{
-    font-size: 1.5rem;
+    
+    font: 22px/24px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+     /* letter-spacing: 0.1rem;  */
     font-weight: bold;
+    color : rgb(78, 76, 76);
+    margin-top:0.5rem;
+    text-shadow: 2px 2px 6px #aaa;
+    /* margin-left : 1rem; */
     
 }
 .usa-country:hover{
     color:blue;
 }
+
 .li-index{
     color :rgb(173, 18, 18);
-    margin-left :0px;
     list-style: square;
+    list-style-position:inside;
+    border: 1px solid rgb(219, 135, 9);
+    border-bottom: 5px solid rgb(148, 5, 12);
+    border-radius: 0.5rem;
+    margin-left: -38px;
+    margin-top :0.5rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 5px 10px 20px lightgray inset;
+}
+.read-more
+{
+    color :rgb(173, 18, 18);
+    font-size: 1.5rem;;
 }
 .news-title-display
 {
-    border-bottom: 1px solid lightgrey;
-    margin-bottom: 0.9rem;
+    
     color: black;
     font-size: 1.1rem;
     font-weight: bold;
 }
 .country-name{
-    height:36rem;
+    /* height:36rem; */
+    /* overflow-y: scroll; */
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.75);
+}
+.panda-background{
+    background-color: rgb(245, 241, 241);
+}
+
+
+ .tnHead {
+    border-top: 5px solid rgb(173, 18, 18);
+    position: relative;
+    background:rgb(245, 241, 241);
+    height: 34px;
+    margin-bottom: 10px;
+ }
+
+ .tnHead h2 {
+    font: 20px/24px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+    position: relative;
+    top: -5px;
+    display: inline-block;
+    padding: 5px 20px;
+    background: rgb(173, 18, 18);
+    color: #FFF;
+}
+
+
+
+.tnHead h2:after {
+    position: absolute;
+    right: -33px;
+    top: 0;
+    content: '';
+    border-style: solid;
+    border-width: 34px 34px 0 0;
+}
+ .tnHead h2:after {
+    border-color: rgb(173, 18, 18) transparent transparent;
 }
