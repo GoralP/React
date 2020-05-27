@@ -42,9 +42,6 @@ import taiwan from './images/taiwan.png';
 import thailand from './images/thailand.png';
 import turkey from './images/turkey.png';
 import unitedkingdom from './images/unitedkingdom.png';
-
-
-
 import { useDispatch } from "react-redux";
 import { fetchNews } from "../redux/actions";
 

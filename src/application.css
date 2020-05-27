@@ -17,8 +17,8 @@
 }
 .news-title
 {
-    /* height:36rem; */
-    /*  overflow-y: scroll; */
+    height:36rem;
+     overflow-y: scroll;
     background-color: white;
     border-radius: 0.5rem;
     box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.75);
@@ -73,8 +73,8 @@
     font-weight: bold;
 }
 .country-name{
-    /* height:36rem; */
-    /* overflow-y: scroll; */
+    height:36rem;
+    overflow-y: scroll;
     background-color: white;
     border-radius: 0.5rem;
     box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.75);
@@ -115,3 +115,12 @@
  .tnHead h2:after {
     border-color: rgb(173, 18, 18) transparent transparent;
 }
+.publishedAt{
+    font-size: 1.3rem;
+    margin-top: 0.8rem;
+}
+.news-img{
+    height: 30rem;
+    width: 33rem;
+    border:none;
+  }
