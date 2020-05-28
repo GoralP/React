@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import panda from './images/panda2.jpg';
  
 
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,Button } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink,Button } from 'reactstrap';
 import "bootstrap/dist/css/bootstrap.css";
 
 const Header = () => {
@@ -13,16 +13,16 @@ const Header = () => {
   return (
     <div className="row navigation-bar">
       
-        <div className="col-md-9">
+        <div className="col-9">
             <div className="row">
             <img className="panda-image" src={panda} alt="panda image"/>
             <h3 className="mt-3 text-white">Panda</h3>
             </div>
         </div>
-      <div className="col-md-3 ">
+      <div className="col-3 mt-1">
         <Navbar color="faded" light expand="md">
-            {/* <NavbarBrand href="/" className="mr-auto">reactstrap</NavbarBrand> */}
-            <NavbarToggler onClick={toggleNavbar} className="mr-2 bg-secondary" />
+            
+            <NavbarToggler onClick={toggleNavbar} className=" bg-secondary" />
             <Collapse isOpen={!collapsed} navbar>
             <Nav navbar>
                 <NavItem>

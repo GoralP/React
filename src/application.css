@@ -2,18 +2,20 @@
     height:4rem;
     width:4rem;
     margin-top :0.5rem;
-    margin-left:0.5rem;
+    padding-left:0.5rem;
 }
 .navigation-bar{
-    border-bottom:1px solid gray;
+    
     background-color: rgb(8, 8, 8);
     /* position: fixed; */
 }
 .icon{
     height:1.8rem;
-    width:2.5rem;
+    width:2.6rem;
     margin-top:0.3rem;
     /* margin-left :0.5rem;  */
+    margin-left:0%;
+    
 }
 .news-title
 {
@@ -24,24 +26,22 @@
     box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.75);
 }
 .news-description{
-    height:33rem;
+    height:36rem;
     overflow-y: scroll;
-}
-.iframe-news-description{
-    width: 40rem;
-    /* height: 36rem; */
-    overflow-y: scroll;
+    background-color: white;
     border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.75);
+    display: none;
 }
+
 .usa-country{
     
     font: 22px/24px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
-     /* letter-spacing: 0.1rem;  */
     font-weight: bold;
     color : rgb(78, 76, 76);
     margin-top:0.5rem;
     text-shadow: 2px 2px 6px #aaa;
-    /* margin-left : 1rem; */
+   
     
 }
 .usa-country:hover{
@@ -119,8 +119,31 @@
     font-size: 1.3rem;
     margin-top: 0.8rem;
 }
-.news-img{
+.news-img
+{
     height: 30rem;
-    width: 33rem;
+    width: 39.5rem;
     border:none;
-  }
+}
+.desktop-hide
+{
+    display: none;
+    margin-top : 1rem;
+}
+.dropdown
+{
+    width : 20rem;
+}
+@media (max-width : 480px)
+{
+    .mobile-hide
+    {
+        display: none;
+    }
+    .desktop-hide
+    {
+        display: block;
+    }
+    
+}
+  
