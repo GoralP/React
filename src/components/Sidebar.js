@@ -1,7 +1,5 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink,Button } from 'reactstrap';
-
 import usa from './images/usa.jpg';
 import india from './images/india.png';
 import argentina from './images/argentina.png';
@@ -50,16 +48,16 @@ import { fetchNews } from "../redux/actions";
 const Sidebar = () =>{
     const dispatch = useDispatch();
 
-    
-
     function HideLastDiv(){
       document.getElementById('newsDescription').style.display = "none";
     }
 
     function bgChange(){
-      
       document.getElementById('change').style.cssText = "background-color:rgb(148, 5, 12);display: inline-block;color:white; font-size:1.7rem;";
     }
+
+    
+      
 
     return( 
       <div>
@@ -133,8 +131,8 @@ const Sidebar = () =>{
         </div>
 
         <div className="row mb-2">
-          <div className="col-md-3 pl-1"><img className="icon" src={greece} alt="greece"></img></div>
-          <div className="col-md-9  usa-country" onClick={() => {dispatch(fetchNews("gr"));HideLastDiv()}}>Greece</div>
+          <div className="col-3 pl-1"><img className="icon" src={greece} alt="greece"></img></div>
+          <div className="col-9  usa-country" onClick={() => {dispatch(fetchNews("gr"));HideLastDiv()}}>Greece</div>
         </div>
 
         <div className="row mb-2">
@@ -282,18 +280,20 @@ const Sidebar = () =>{
 
       </div>
       <div className="desktop-hide" >
-        <select id="show" class="dropdown">
-          <option  onChange={() => {dispatch(fetchNews("gb"));HideLastDiv()}}>Argentina</option>
-          <option >Australia</option>
+        <select id="show" class="dropdown" >
+          <option  >Argentina</option>
+          <option value ="au" data-image={india}>Australia</option>
           <option >Austria</option>
           <option >Belgium</option>
           <option >Canada</option>
           <option >United States</option>
-          <option >India</option>
+          <option value ="in">India</option>
           <option >China</option>
           <option >Columbia</option>
           <option >Cuba</option> 
         </select>
+
+        
 
       </div>
 
