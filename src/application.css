@@ -20,7 +20,7 @@
 .news-title
 {
     height:36rem;
-     overflow-y: scroll;
+    overflow-y: scroll;
     background-color: white;
     border-radius: 0.5rem;
     box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.75);
@@ -102,7 +102,9 @@
     color: #FFF;
 }
 
-
+.country-border{
+    border-top: 5px solid rgb(173, 18, 18);
+}
 
 .tnHead h2:after {
     position: absolute;
@@ -130,11 +132,30 @@
     display: none;
     margin-top : 1rem;
 }
+.mobile-news-title{
+    display: block;
+}
+.mobile-news-description{
+    display: none;
+}
 .dropdown
 {
-    width : 20rem;
+    width : 21.5rem;
+    height:2.3rem;
+    background-color:rgb(173, 18, 18);
+    border-radius: 0.6rem;
+    /* border:none; */
+    color:white;
 }
-@media (max-width : 480px)
+.btn-home{
+    border:none;
+    border-radius:0.5rem;
+    width :4.5rem;
+    height:2rem;
+    font-weight: bold;
+    margin-left : 16.5rem;
+}
+@media only screen and (min-width: 375px) and (max-width:424px)
 {
     .mobile-hide
     {
@@ -144,6 +165,60 @@
     {
         display: block;
     }
+    .news-img
+    {
+        height: 15rem;
+        width: 21rem;
+        border:none;
+        margin-left:0.2rem;
+    }
+    .panda-background{
+        padding-bottom: 28.3rem;
+    }
     
 }
-  
+
+@media only screen and (min-width: 425px) and (max-width:767px)
+{
+    .mobile-hide
+    {
+        display: none;
+    }
+    .desktop-hide
+    {
+        display: block;
+    }
+    .news-img
+    {
+        height: 16rem;
+        width: 24rem;
+        margin-left:0.3rem;
+    }
+    .dropdown
+    {
+        width : 24.5rem;
+        
+    }  
+    .btn-home{
+        margin-left : 20rem;
+    }
+}
+ 
+@media only screen and (min-width: 768px) and (max-width:1023px)
+{
+    .usa-country{
+        font: 16px/24px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+        font-weight: bold;
+        color : rgb(78, 76, 76);
+        margin-top:0.5rem;
+        text-shadow: 2px 2px 6px #aaa;
+    }
+    .icon{
+        height:1.5rem;
+        width:2rem;
+        margin-top:0.3rem;
+        /* margin-left :0.5rem;  */
+        margin-left:0%;
+        
+    }
+}

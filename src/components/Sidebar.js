@@ -279,7 +279,7 @@ const Sidebar = () =>{
         
 
       </div>
-      <div className="desktop-hide" >
+      {/* <div className="desktop-hide" >
         <select id="show" class="dropdown" >
           <option  >Argentina</option>
           <option value ="au" data-image={india}>Australia</option>
@@ -295,7 +295,7 @@ const Sidebar = () =>{
 
         
 
-      </div>
+      </div> */}
 
       </div> 
       
