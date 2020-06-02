@@ -24,13 +24,11 @@ function showNewsDescription(){
 
 function mobileDescription(){
   document.getElementById('mobile-news').style.display ="none";
-  // document.getElementById('dropdown').style.display ="none";
   document.getElementById('mobile-description').style.display ="block";
 }
 
 function backToHome(){
-  document.getElementById('mobile-news').style.display ="block";
-  // document.getElementById('dropdown').style.display ="none";
+  document.getElementById('mobile-news').style.display ="none";
   document.getElementById('mobile-description').style.display ="none";
 }
 
@@ -80,7 +78,7 @@ const Countries = [
 
 const MobileCountryNews=(event)=>{
   console.log(event.target.value)
-  dispatch(fetchNews(event.target.value))
+  dispatch(fetchNews(event.target.value),document.getElementById('mobile-news').style.display ="block",document.getElementById('mobile-description').style.display ="none")
 }
 
 
@@ -111,9 +109,9 @@ return (
                     {news !== null &&
                       news.map(news => (
                         <li className="li-index shadow px-3 pt-2">
-                          <div className="news-title-display">
-                            <div>{news.title}</div>
-                            <div><a href="#1" onClick={() => {setsinglenews(news);showNewsDescription()}} className="read-more">Read more</a></div>
+                          <div className="">
+                            <div className="news-title-display">{news.title}</div>
+                            <div className="read-more"><a href="#1" onClick={() => {setsinglenews(news);showNewsDescription()}} className="read-more-color" >Read More</a></div>
                           </div>
                         </li>
                     ))}
@@ -123,15 +121,17 @@ return (
             </div>
 
             <div className="col-md-6 shadow  font-weight-bold news-description" id="newsDescription">
-              <div className="publishedAt">{singleNews.publishedAt}</div>
-              <div className="read-more">{singleNews.title}</div>
+              
+              <div className="mobile-view-title mb-2 mt-2">{singleNews.title}</div>
+              <div className="publishedAt">Published At: {singleNews.publishedAt}</div>
               <img className="news-img" src={singleNews.urlToImage} />
-              <p className="right-description mt-2">{singleNews.description}</p>
-              <p className="right-description">{singleNews.content}</p>
+              <p className="mobile-view-description mt-2">{singleNews.description}</p>
+              <p className="mobile-view-description">{singleNews.content}</p>
+              <p className="mobile-view-description mx-2">For More Information <a href={singleNews.url} target="_blank">Click here</a></p>
             </div>
           </div>
       
-        <div className="desktop-hide"  >
+        <div className="desktop-hide mobile-view-font "  >
           <select className="dropdown"  onChange={MobileCountryNews}>
             <option>Select Country</option>
               {Countries !== null &&
@@ -149,9 +149,9 @@ return (
                     {news !== null &&
                       news.map(news => (
                         <li className="li-index shadow px-3 pt-2">
-                          <div className="news-title-display">
-                            <div>{news.title}</div>
-                            <div><a href="#1" onClick={() => {setsinglenews(news);mobileDescription()}} className="read-more">Read more</a></div>
+                          <div >
+                            <div className="news-title-display">{news.title}</div>
+                            <div className="read-more"><a href="#1" onClick={() => {setsinglenews(news);mobileDescription()}} className="read-more-color">Read more</a></div>
                           </div>
                         </li>
                     ))}
@@ -161,12 +161,14 @@ return (
             </div>
 
             <div className="shadow  font-weight-bold mobile-news-description" id="mobile-description">
-              <button className="btn-primary mt-3 btn-home" onClick={backToHome}>Home</button>
-              <div className="publishedAt">{singleNews.publishedAt}</div>
-              <div className="read-more">{singleNews.title}</div>
+              
+            <button className="btn-info mt-3 btn-home" onClick={backToHome}>Back to Home</button>
+              <div className="mobile-title mx-2 mt-2">{singleNews.title}</div>
+              <div className="publishedAt mb-2 mx-2">Published At :{singleNews.publishedAt}</div>
               <img className="news-img" src={singleNews.urlToImage} />
-              <p className="right-description mt-2">{singleNews.description}</p>
-              <p className="right-description">{singleNews.content}</p>
+              <p className="mobile-view-description mt-2 mx-2">{singleNews.description}</p>
+              <p className="mobile-view-description mx-2">{singleNews.content}</p>
+              <p className="mobile-view-description mx-2">For More Information <a href={singleNews.url}>Click here</a></p>
             </div>
 
 

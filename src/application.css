@@ -1,13 +1,16 @@
 .panda-image{
     height:4rem;
-    width:4rem;
+    width:5rem;
     margin-top :0.5rem;
-    padding-left:0.5rem;
+    /* padding-left:0.1rem; */
 }
 .navigation-bar{
     
     background-color: rgb(8, 8, 8);
     /* position: fixed; */
+}
+.toggle-button{
+    margin-left:6.7rem;
 }
 .icon{
     height:1.8rem;
@@ -63,14 +66,22 @@
 .read-more
 {
     color :rgb(173, 18, 18);
-    font-size: 1.5rem;;
+    /* font-size: 1.7rem; */
+    font-weight: bold;
+    margin-top:0.5rem; 
+    margin-bottom:0.3rem;
+    font: 26px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+}
+.read-more-color{
+    color :rgb(173, 18, 18);
+    font-weight: bold;
 }
 .news-title-display
 {
-    
     color: black;
-    font-size: 1.1rem;
+    /* font-size: 1.3rem; */
     font-weight: bold;
+    font: 22px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
 }
 .country-name{
     height:36rem;
@@ -118,8 +129,9 @@
     border-color: rgb(173, 18, 18) transparent transparent;
 }
 .publishedAt{
-    font-size: 1.3rem;
-    margin-top: 0.8rem;
+    /* font-size: 1.1rem; */
+    /* margin-top: 0.8rem; */
+    font: 20px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
 }
 .news-img
 {
@@ -141,20 +153,78 @@
 .dropdown
 {
     width : 21.5rem;
-    height:2.3rem;
+    height:2.8rem;
     background-color:rgb(173, 18, 18);
     border-radius: 0.6rem;
     /* border:none; */
     color:white;
+    
 }
 .btn-home{
     border:none;
     border-radius:0.5rem;
-    width :4.5rem;
-    height:2rem;
-    font-weight: bold;
-    margin-left : 16.5rem;
+    width :11rem;
+    height:2.5rem;
+    margin-bottom : 0.5rem;
+    margin-left :10.5rem;
+    font-size :1.3rem;
 }
+
+.mobile-view-font{
+    font-size : 1.5rem;
+}
+.mobile-view-description{
+    /* font-size:1.1rem; */
+    font: 20px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+}
+.mobile-view-title{
+    /* font-size:1.3rem; */
+    color :rgb(173, 18, 18);
+    font: 23px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+}
+.mobile-title
+{
+    color :rgb(173, 18, 18);
+    font: 21px/23px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+    margin-bottom:5px;
+}
+
+@media only screen and (min-width: 320px) and (max-width:374px)
+{
+    .mobile-hide
+    {
+        display: none;
+    }
+    .desktop-hide
+    {
+        display: block;
+    }
+    .news-img
+    {
+        height: 15rem;
+        width: 17rem;
+        border:none;
+        margin-left:0.5rem;
+    }
+    .panda-background{
+        padding-bottom: 28.3rem;
+    }
+    .dropdown
+    {
+        width : 18rem;
+       
+    }  
+    .toggle-button{
+        margin-left:0px;
+    }
+    .btn-home{
+        
+        margin-left :7rem;
+        
+    }
+}
+
+
 @media only screen and (min-width: 375px) and (max-width:424px)
 {
     .mobile-hide
@@ -175,8 +245,12 @@
     .panda-background{
         padding-bottom: 28.3rem;
     }
+    .toggle-button{
+        margin-left:1rem;
+    }
     
 }
+
 
 @media only screen and (min-width: 425px) and (max-width:767px)
 {
@@ -202,6 +276,14 @@
     .btn-home{
         margin-left : 20rem;
     }
+    .toggle-button{
+        margin-left:1.8rem;
+    }
+    .btn-home{
+        
+        margin-left :13.5rem;
+        
+    }
 }
  
 @media only screen and (min-width: 768px) and (max-width:1023px)
@@ -219,6 +301,38 @@
         margin-top:0.3rem;
         /* margin-left :0.5rem;  */
         margin-left:0%;
+    }
+    .toggle-button{
+        margin-left:3.5rem;
+    }
+    .news-img
+    {
+        height: 18rem;
+        width: 22rem;
+       
+    }
+    .mobile-view-title{
+       
+        font: 18px/22px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+    }
+    .news-title-display
+    {
+       
+        font: 19px/25px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+    }
+    .mobile-view-description{
         
+        font: 17px/22px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+    }
+    .publishedAt{
+        margin-bottom : 5px;
+        font: 17px/22px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+    }
+    
+}
+@media only screen and (min-width: 1024px) and (max-width:1439px)
+{
+    .toggle-button{
+        margin-left:4.9rem;
     }
 }

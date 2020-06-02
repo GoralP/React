@@ -13,13 +13,13 @@ const Header = () => {
   return (
     <div className="row navigation-bar">
       
-        <div className="col-9">
+        <div className="col-8">
             <div className="row">
             <img className="panda-image" src={panda} alt="panda image"/>
             <h3 className="mt-3 text-white">Panda</h3>
             </div>
         </div>
-      <div className="col-3 mt-1">
+      <div className="col-3 mt-1 toggle-button">
         <Navbar color="faded" light expand="md">
             
             <NavbarToggler onClick={toggleNavbar} className=" bg-secondary" />
