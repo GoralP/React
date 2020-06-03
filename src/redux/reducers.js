@@ -1,7 +1,6 @@
 const initialState = {
   loading: false,
   news: null,
-  
 };
 
 const newsReducer = (state = initialState, action) => {
@@ -10,7 +9,6 @@ const newsReducer = (state = initialState, action) => {
       return { ...state, loading: true, news: null };
     case "NEWS_FETCH_SUCCESS":
       return { ...state, loading: false, news: action.news };
-    
     default:
       return { ...state };
   }

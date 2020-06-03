@@ -1,24 +1,22 @@
-.panda-image{
+.panda-image
+{
     height:4rem;
     width:5rem;
     margin-top :0.5rem;
-    /* padding-left:0.1rem; */
 }
-.navigation-bar{
-    
+.navigation-bar
+{
     background-color: rgb(8, 8, 8);
-    /* position: fixed; */
 }
-.toggle-button{
+.toggle-button
+{
     margin-left:6.7rem;
 }
 .icon{
     height:1.8rem;
     width:2.6rem;
     margin-top:0.3rem;
-    /* margin-left :0.5rem;  */
     margin-left:0%;
-    
 }
 .news-title
 {
@@ -28,7 +26,8 @@
     border-radius: 0.5rem;
     box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.75);
 }
-.news-description{
+.news-description
+{
     height:36rem;
     overflow-y: scroll;
     background-color: white;
@@ -37,21 +36,20 @@
     display: none;
 }
 
-.usa-country{
-    
+.usa-country
+{
     font: 22px/24px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
     font-weight: bold;
     color : rgb(78, 76, 76);
     margin-top:0.5rem;
     text-shadow: 2px 2px 6px #aaa;
-   
-    
 }
-.usa-country:hover{
+.usa-country:hover
+{
     color:blue;
 }
-
-.li-index{
+.li-index
+{
     color :rgb(173, 18, 18);
     list-style: square;
     list-style-position:inside;
@@ -66,36 +64,36 @@
 .read-more
 {
     color :rgb(173, 18, 18);
-    /* font-size: 1.7rem; */
     font-weight: bold;
     margin-top:0.5rem; 
     margin-bottom:0.3rem;
     font: 26px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
 }
-.read-more-color{
+.read-more-color
+{
     color :rgb(173, 18, 18);
     font-weight: bold;
 }
 .news-title-display
 {
     color: black;
-    /* font-size: 1.3rem; */
     font-weight: bold;
     font: 22px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
 }
-.country-name{
+.country-name
+{
     height:36rem;
     overflow-y: scroll;
     background-color: white;
     border-radius: 0.5rem;
     box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.75);
 }
-.panda-background{
+.panda-background
+{
     background-color: rgb(245, 241, 241);
 }
-
-
- .tnHead {
+.tnHead 
+{
     border-top: 5px solid rgb(173, 18, 18);
     position: relative;
     background:rgb(245, 241, 241);
@@ -103,7 +101,8 @@
     margin-bottom: 10px;
  }
 
- .tnHead h2 {
+.tnHead h2 
+ {
     font: 20px/24px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
     position: relative;
     top: -5px;
@@ -112,12 +111,12 @@
     background: rgb(173, 18, 18);
     color: #FFF;
 }
-
-.country-border{
+.country-border
+{
     border-top: 5px solid rgb(173, 18, 18);
 }
-
-.tnHead h2:after {
+.tnHead h2:after 
+{
     position: absolute;
     right: -33px;
     top: 0;
@@ -125,11 +124,12 @@
     border-style: solid;
     border-width: 34px 34px 0 0;
 }
- .tnHead h2:after {
+.tnHead h2:after 
+{
     border-color: rgb(173, 18, 18) transparent transparent;
 }
-.publishedAt{
-    
+.publishedAt
+{
     font: 20px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
 }
 .news-img
@@ -144,10 +144,12 @@
     display: none;
     margin-top : 1rem;
 }
-.mobile-news-title{
+.mobile-news-title
+{
     display: block;
 }
-.mobile-news-description{
+.mobile-news-description
+{
     display: none;
 }
 .dropdown
@@ -156,11 +158,10 @@
     height:2.8rem;
     background-color:rgb(173, 18, 18);
     border-radius: 0.6rem;
-    /* border:none; */
     color:white;
-    
 }
-.btn-home{
+.btn-home
+{
     border:none;
     border-radius:0.5rem;
     width :11rem;
@@ -169,16 +170,16 @@
     margin-left :10.5rem;
     font-size :1.3rem;
 }
-
-.mobile-view-font{
+.mobile-view-font
+{
     font-size : 1.5rem;
 }
-.mobile-view-description{
-    /* font-size:1.1rem; */
+.mobile-view-description
+{
     font: 20px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
 }
-.mobile-view-title{
-    /* font-size:1.3rem; */
+.mobile-view-title
+{
     color :rgb(173, 18, 18);
     font: 23px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
 }
@@ -215,15 +216,13 @@
     .dropdown
     {
         width : 18rem;
-       
     }  
     .toggle-button{
         margin-left:0px;
     }
-    .btn-home{
-        
+    .btn-home
+    {
         margin-left :7rem;
-        
     }
 }
 
@@ -251,7 +250,6 @@
     .toggle-button{
         margin-left:1rem;
     }
-    
 }
 
 
@@ -274,67 +272,69 @@
     .dropdown
     {
         width : 24.5rem;
-        
     }  
-    .btn-home{
+    .btn-home
+    {
         margin-left : 20rem;
     }
-    .toggle-button{
+    .toggle-button
+    {
         margin-left:1.8rem;
     }
-    .btn-home{
-        
+    .btn-home
+    {
         margin-left :13.5rem;
-        
     }
 }
  
 @media only screen and (min-width: 768px) and (max-width:1023px)
 {
-    .usa-country{
+    .usa-country
+    {
         font: 16px/24px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
         font-weight: bold;
         color : rgb(78, 76, 76);
         margin-top:0.5rem;
         text-shadow: 2px 2px 6px #aaa;
     }
-    .icon{
+    .icon
+    {
         height:1.5rem;
         width:2rem;
         margin-top:0.3rem;
-        /* margin-left :0.5rem;  */
         margin-left:0%;
     }
-    .toggle-button{
+    .toggle-button
+    {
         margin-left:3.5rem;
     }
     .news-img
     {
         height: 18rem;
         width: 22rem;
-       
     }
-    .mobile-view-title{
-       
+    .mobile-view-title
+    {
         font: 18px/22px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
     }
     .news-title-display
     {
-       
         font: 19px/25px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
     }
-    .mobile-view-description{
+    .mobile-view-description
+    {
         
         font: 17px/22px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
     }
-    .publishedAt{
+    .publishedAt
+    {
         font: 17px/22px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
     }
-    
 }
 @media only screen and (min-width: 1024px) and (max-width:1439px)
 {
-    .toggle-button{
+    .toggle-button
+    {
         margin-left:4.9rem;
     }
 }
