@@ -129,8 +129,7 @@
     border-color: rgb(173, 18, 18) transparent transparent;
 }
 .publishedAt{
-    /* font-size: 1.1rem; */
-    /* margin-top: 0.8rem; */
+    
     font: 20px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
 }
 .news-img
@@ -138,6 +137,7 @@
     height: 30rem;
     width: 39.5rem;
     border:none;
+    margin-top : 7px;
 }
 .desktop-hide
 {
@@ -187,6 +187,9 @@
     color :rgb(173, 18, 18);
     font: 21px/23px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
     margin-bottom:5px;
+}
+.updatedAt{
+    font: 21px/23px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
 }
 
 @media only screen and (min-width: 320px) and (max-width:374px)
@@ -325,7 +328,6 @@
         font: 17px/22px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
     }
     .publishedAt{
-        margin-bottom : 5px;
         font: 17px/22px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
     }
     
