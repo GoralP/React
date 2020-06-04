@@ -1,3 +1,7 @@
+.panda-background
+{
+    background-color: rgb(245, 241, 241);
+}
 .panda-image
 {
     height:4rem;
@@ -12,31 +16,49 @@
 {
     margin-left:6.7rem;
 }
+.tnHead 
+{
+    border-top: 5px solid rgb(173, 18, 18);
+    position: relative;
+    background:rgb(245, 241, 241);
+    height: 34px;
+    margin-bottom: 10px;
+ }
+
+.tnHead h2 
+ {
+    font: 20px/24px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+    position: relative;
+    top: -5px;
+    display: inline-block;
+    padding: 5px 20px;
+    background: rgb(173, 18, 18);
+    color: #FFF;
+}
+.tnHead h2:after 
+{
+    position: absolute;
+    right: -33px;
+    top: 0;
+    content: '';
+    border-style: solid;
+    border-width: 34px 34px 0 0;
+}
+.tnHead h2:after 
+{
+    border-color: rgb(173, 18, 18) transparent transparent;
+}
 .icon{
     height:1.8rem;
     width:2.6rem;
     margin-top:0.3rem;
     margin-left:0%;
 }
-.news-title
+.country-news-border
 {
-    height:36rem;
-    overflow-y: scroll;
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.75);
+    border-top: 5px solid rgb(173, 18, 18);
 }
-.news-description
-{
-    height:36rem;
-    overflow-y: scroll;
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.75);
-    display: none;
-}
-
-.usa-country
+.country-style
 {
     font: 22px/24px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
     font-weight: bold;
@@ -44,9 +66,40 @@
     margin-top:0.5rem;
     text-shadow: 2px 2px 6px #aaa;
 }
-.usa-country:hover
+.country-style:hover
 {
     color:blue;
+}
+.country-name-portion
+{
+    height:36rem;
+    overflow-y: scroll;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.75);
+}
+.news-title-portion
+{
+    height:36rem;
+    overflow-y: scroll;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.75);
+}
+.news-title-font
+{
+    color: black;
+    font-weight: bold;
+    font: 22px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+}
+.news-description-portion
+{
+    height:36rem;
+    overflow-y: scroll;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.75);
+    
 }
 .li-index
 {
@@ -74,65 +127,11 @@
     color :rgb(173, 18, 18);
     font-weight: bold;
 }
-.news-title-display
-{
-    color: black;
-    font-weight: bold;
-    font: 22px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
-}
-.country-name
-{
-    height:36rem;
-    overflow-y: scroll;
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.75);
-}
-.panda-background
-{
-    background-color: rgb(245, 241, 241);
-}
-.tnHead 
-{
-    border-top: 5px solid rgb(173, 18, 18);
-    position: relative;
-    background:rgb(245, 241, 241);
-    height: 34px;
-    margin-bottom: 10px;
- }
-
-.tnHead h2 
- {
-    font: 20px/24px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
-    position: relative;
-    top: -5px;
-    display: inline-block;
-    padding: 5px 20px;
-    background: rgb(173, 18, 18);
-    color: #FFF;
-}
-.country-border
-{
-    border-top: 5px solid rgb(173, 18, 18);
-}
-.tnHead h2:after 
-{
-    position: absolute;
-    right: -33px;
-    top: 0;
-    content: '';
-    border-style: solid;
-    border-width: 34px 34px 0 0;
-}
-.tnHead h2:after 
-{
-    border-color: rgb(173, 18, 18) transparent transparent;
-}
 .publishedAt
 {
     font: 20px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
 }
-.news-img
+.description-news-img
 {
     height: 30rem;
     width: 39.5rem;
@@ -144,15 +143,7 @@
     display: none;
     margin-top : 1rem;
 }
-.mobile-news-title
-{
-    display: block;
-}
-.mobile-news-description
-{
-    display: none;
-}
-.dropdown
+.country-dropdown
 {
     width : 21.5rem;
     height:2.8rem;
@@ -160,6 +151,7 @@
     border-radius: 0.6rem;
     color:white;
 }
+
 .btn-home
 {
     border:none;
@@ -178,10 +170,10 @@
 {
     font: 20px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
 }
-.mobile-view-title
+.desktop-view-title
 {
     color :rgb(173, 18, 18);
-    font: 23px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+    font: 21px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
 }
 .mobile-title
 {
@@ -190,7 +182,7 @@
     margin-bottom:5px;
 }
 .updatedAt{
-    font: 21px/23px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+    font: 20px/23px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
 }
 
 @media only screen and (min-width: 320px) and (max-width:374px)
@@ -203,7 +195,7 @@
     {
         display: block;
     }
-    .news-img
+    .description-news-img
     {
         height: 15rem;
         width: 17rem;
@@ -213,9 +205,9 @@
     .panda-background{
         padding-bottom: 28.3rem;
     }
-    .dropdown
+    .country-dropdown
     {
-        width : 18rem;
+        width : 17.7rem;
     }  
     .toggle-button{
         margin-left:0px;
@@ -237,7 +229,7 @@
     {
         display: block;
     }
-    .news-img
+    .description-news-img
     {
         height: 15rem;
         width: 21rem;
@@ -263,13 +255,13 @@
     {
         display: block;
     }
-    .news-img
+    .description-news-img
     {
         height: 16rem;
         width: 24rem;
         margin-left:0.3rem;
     }
-    .dropdown
+    .country-dropdown
     {
         width : 24.5rem;
     }  
@@ -289,7 +281,7 @@
  
 @media only screen and (min-width: 768px) and (max-width:1023px)
 {
-    .usa-country
+    .country-style
     {
         font: 16px/24px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
         font-weight: bold;
@@ -308,19 +300,22 @@
     {
         margin-left:3.5rem;
     }
-    .news-img
+    .description-news-img
     {
         height: 18rem;
         width: 22rem;
     }
-    .mobile-view-title
+    
+    .desktop-view-title
     {
-        font: 18px/22px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+        color :rgb(173, 18, 18);
+        font: 18px/30px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
     }
-    .news-title-display
+    .news-title-font
     {
-        font: 19px/25px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+        font: 18px/25px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
     }
+    
     .mobile-view-description
     {
         
@@ -329,6 +324,9 @@
     .publishedAt
     {
         font: 17px/22px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
+    }
+    .updatedAt{
+        font: 17px/23px Bhaskar_Web_Head_Test_exp, 'Noto Sans';
     }
 }
 @media only screen and (min-width: 1024px) and (max-width:1439px)

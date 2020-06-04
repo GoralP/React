@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import usa from './images/usa.jpg';
 import india from './images/india.png';
 import argentina from './images/argentina.png';
@@ -26,7 +26,6 @@ import morocco from './images/morocco.png';
 import netherlands from './images/netherlands.png';
 import newzealand from './images/newzealand.png';
 import nigeria from './images/nigeria.png';
-import philippine from './images/philippine.png';
 import poland from './images/poland.png';
 import portugal from './images/portugal.png';
 import romania from './images/romania.png';
@@ -90,13 +89,6 @@ const Sidebar = () =>{
     { key: "gb", value: "United Kingdom",url : unitedkingdom },
   ];
 
-  function HideLastDiv(){
-    document.getElementById('newsDescription').style.display = "none";
-  }
-
-  function bgChange(){
-    document.getElementById('change').style.cssText = "background-color:rgb(148, 5, 12);display: inline-block;color:white; font-size:1.7rem;";
-  }
   return( 
     <div>
       <div class="mobile-hide">
@@ -104,8 +96,8 @@ const Sidebar = () =>{
           {Countries !== null &&
           Countries.map((country) => (
             <>
-              <div className="col-3 pl-1 mb-1"><img className="icon" src={country.url} alt="argentina"></img></div>
-              <div className="col-9  usa-country" onClick={() => dispatch(fetchNews(country.key))} >{country.value}</div> 
+              <div className="col-3 pl-1 mb-1"><img className="icon" src={country.url} alt="All country"></img></div>
+              <div className="col-9  country-style" onClick={() => {dispatch(fetchNews(country.key))}} >{country.value}</div> 
             </>
           ))}
         </div>
